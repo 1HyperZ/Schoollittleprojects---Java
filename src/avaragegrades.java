@@ -6,7 +6,7 @@ public class avaragegrades
     {
         Scanner input = new Scanner(System.in);
         int grade = 0, numofgrades = 0, sum = 0;
-        while (grade <= 100)
+        while (grade <= 100 && grade >= 0)
         {
             sum = sum +grade;
             numofgrades ++;
