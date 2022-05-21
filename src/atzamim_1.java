@@ -8,15 +8,11 @@ public class atzamim_1
         int[] arr = new int[62];
         int count = 0;
         int sum = 0;
+        int max = 0;
         for(int i = 0 ; i < 62 ; i++)
         {
-            if (arr[i] > 99 && arr[i] < 1000)
-            {
-                sum = sum + arr[i];
-                if (arr[i] > 248)
-                    count++;
-            }
+            if (arr[i] > max)
+                max = arr[i];
         }
-        System.out.println("the sum of 3 digit numbers is " + sum + "the number of 3 digit numbers that higher thank 248 is " + count);
     }
 } 
