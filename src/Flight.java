@@ -48,4 +48,13 @@ public class Flight {
         String str = (" The class: " + this.name + "," + this.count + "," + this.is_arriving + "," + this.hour);
         return str;
     }
+    public boolean isLandingAbove(int num)
+    {
+        boolean flag = false;
+        if (this.count > num && this.is_arriving == true)
+        {
+            flag = true;
+        }
+        return flag;
+    }
 }
